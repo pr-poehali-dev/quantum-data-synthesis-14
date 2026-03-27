@@ -43,6 +43,13 @@ export function WorkSection() {
               year: "iOS / Android",
               direction: "left",
             },
+            {
+              number: "04",
+              title: "Отслеживание багажа",
+              category: "Статус и местонахождение вашего багажа",
+              year: "iOS / Android",
+              direction: "right",
+            },
           ].map((project, i) => (
             <ProjectCard key={i} project={project} index={i} isVisible={isVisible} />
           ))}
