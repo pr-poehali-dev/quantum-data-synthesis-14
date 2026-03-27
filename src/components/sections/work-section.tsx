@@ -15,32 +15,32 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Возможности
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Что умеет приложение</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "Онлайн-табло рейсов",
+              category: "Вылеты и прилёты в реальном времени",
+              year: "iOS / Android",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "Мобильная регистрация",
+              category: "Посадочный талон прямо в телефоне",
+              year: "iOS / Android",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Навигация по терминалу",
+              category: "Карта аэропорта, магазины и сервисы",
+              year: "iOS / Android",
               direction: "left",
             },
           ].map((project, i) => (
@@ -70,7 +70,7 @@ function ProjectCard({
 
   return (
     <div
-      className={`group flex items-center justify-between border-b border-foreground/10 py-6 transition-all duration-700 hover:border-foreground/20 md:py-8 ${getRevealClass()}`}
+      className={`group flex items-center justify-between border-b border-foreground/10 py-6 transition-all duration-700 hover:border-primary/30 md:py-8 ${getRevealClass()}`}
       style={{
         transitionDelay: `${index * 150}ms`,
         marginLeft: index % 2 === 0 ? "0" : "auto",
@@ -78,7 +78,7 @@ function ProjectCard({
       }}
     >
       <div className="flex items-baseline gap-4 md:gap-8">
-        <span className="font-mono text-sm text-foreground/30 transition-colors group-hover:text-foreground/50 md:text-base">
+        <span className="font-mono text-sm text-primary/50 transition-colors group-hover:text-primary/80 md:text-base">
           {project.number}
         </span>
         <div>
@@ -88,7 +88,7 @@ function ProjectCard({
           <p className="font-mono text-xs text-foreground/50 md:text-sm">{project.category}</p>
         </div>
       </div>
-      <span className="font-mono text-xs text-foreground/30 md:text-sm">{project.year}</span>
+      <span className="font-mono text-xs text-primary/60 md:text-sm">{project.year}</span>
     </div>
   )
 }

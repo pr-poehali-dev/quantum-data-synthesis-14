@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Функции
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Всё для комфортного перелёта</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Push-уведомления",
+              description: "Мгновенные оповещения об изменении статуса рейса, задержках и посадке",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Парковка и трансфер",
+              description: "Бронирование парковочного места и заказ такси прямо из приложения",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Магазины и рестораны",
+              description: "Полный каталог заведений аэропорта с режимом работы и расположением",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Программа лояльности",
+              description: "Накопление бонусных миль и специальные предложения для постоянных пассажиров",
               direction: "bottom",
             },
           ].map((service, i) => (
@@ -86,8 +86,8 @@ function ServiceCard({
       }}
     >
       <div className="mb-3 flex items-center gap-3">
-        <div className="h-px w-8 bg-foreground/30 transition-all duration-300 group-hover:w-12 group-hover:bg-foreground/50" />
-        <span className="font-mono text-xs text-foreground/60">0{index + 1}</span>
+        <div className="h-px w-8 bg-primary/40 transition-all duration-300 group-hover:w-12 group-hover:bg-primary/70" />
+        <span className="font-mono text-xs text-primary/70">0{index + 1}</span>
       </div>
       <h3 className="mb-2 font-sans text-2xl font-light text-foreground md:text-3xl">{service.title}</h3>
       <p className="max-w-sm text-sm leading-relaxed text-foreground/80 md:text-base">{service.description}</p>
