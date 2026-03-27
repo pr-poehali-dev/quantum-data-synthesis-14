@@ -222,7 +222,7 @@ export default function Index() {
           <img
             src="https://cdn.poehali.dev/projects/1e86102c-4451-41a7-b9d5-a06d497732a7/bucket/4d843013-fa05-49cb-9079-1c96497d10f8.jpeg"
             alt="Международный аэропорт Хабаровск имени Г.И. Невельского"
-            className="h-12 w-auto object-contain md:h-14"
+            className="h-12 w-auto object-contain md:h-14 mix-blend-multiply"
           />
         </button>
 
